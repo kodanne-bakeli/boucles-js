@@ -71,19 +71,14 @@ Expected output: "12345"
 
          
       if(n){
-         document.write(`<table>`)
-         document.write(`<tr class="border">`)
-         document.write(` <td> n </td>`)
-         document.write(` <td> i </td>`)
-         document.write(` <td> n*i </td>`)
-         document.write(`</tr>`)
-        for (let i = 1; i <= 10; i++) {
-           document.write(`<tr class="border">`)
-           document.write(`<td > ${n} x</td>`);
-           document.write(`<td> ${i} =</td>`)
-           document.write(`<td class="border"> ${n*i} </td>`)
 
-           document.write(`</tr>`)
+        for (let i = 1; i <= 10; i++) {
+          document.getElementById("produit").innerHTML +=
+          `<tr>
+          <td > ${n} </td>
+          <td> ${i}</td>
+          <td> ${n*i} </td>
+           </tr>`
          };
          
         document.write(`</table>`)
@@ -95,17 +90,17 @@ Expected output: "12345"
      
           // Do...While
 
- if(n){
-   var i = 0;
- do {
-    i += 1;
+//  if(n){
+//    var i = 0;
+//  do {
+//     i += 1;
 
-    document.write(`${i} * ${n} = ${i*n}`);
- } while (i <= 10 )        
- }else{
-   prompt("veuillez saisir un nombre entier")
+//     document.write(`<td>${i} * ${n} = ${i*n}</td>`);
+//  } while (i <= 10 )        
+//  }else{
+//    prompt("veuillez saisir un nombre entier")
 
- }
+//  }
 
  
  
